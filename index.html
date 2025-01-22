@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    <meta name="description" content="موقع شخصي يقدم خدمات احترافية بطريقة سهلة ومميزة.">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
     <link rel="stylesheet" href="css/style.css">
-    <title>مرحبا</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
 </head>
 <body>
     <nav>
         <ul>
-           <h2><i class="fas fa-info-circle">الرئيسية</a></li>
-<h2><i class="fas fa-info-circle"></i> عن الموقع</h2>
-            <h2><i class="fas fa-info-circle">اتصل بنا</a></li>
+            <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> عن الموقع</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
         </ul>
     </nav>
 
-    <h1>مرحبًا بكم في موقعي الشخصي</h1>
-    <p>هذا الموقع يعمل على GitHub Pages.</p>
-    <button onclick="showMessage()">اضغط هنا</button>
+    <header id="home">
+        <h1>مرحبًا بكم في موقعي الشخصي</h1>
+        <p>هذا الموقع يعمل على GitHub Pages.</p>
+        <button onclick="showMessage()">اضغط هنا</button>
+    </header>
+
+    <section id="about">
+        <h2>عن الموقع</h2>
+        <p>هذا الموقع يهدف إلى تقديم خدماتي بطريقة احترافية ومميزة.</p>
+    </section>
+
+    <section id="contact">
+        <h2>اتصل بنا</h2>
+        <p>للتواصل عبر البريد الإلكتروني:</p>
+        <p>example@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة. تصميم بواسطة [اسمك]</p>
+    </footer>
 
     <script src="js/script.js"></script>
-    <section id="about">
-    <h2>عن الموقع</h2>
-    <p>هذا الموقع يهدف إلى تقديم خدماتي بطريقة احترافية ومميزة.</p>
-</section>
-
-<section id="contact">
-    <h2>اتصل بنا</h2>
-    <p>للتواصل عبر البريد الإلكتروني: example@example.com</p>
-</section>
-
 </body>
 </html>
-<footer>
-    <p>&copy; 2025 جميع الحقوق محفوظة. تصميم بواسطة [اسمك]</p>
-</footer>

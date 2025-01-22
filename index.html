@@ -1,199 +1,405 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="نوف للخدمات الإلكترونية تقدم حلولاً متكاملة تشمل التسجيل في البرامج الحكومية، تصميم السير الذاتية، إنشاء المتاجر الإلكترونية، وخدمات طلابية متكاملة.">
-    <meta name="keywords" content="نوف, خدمات إلكترونية, تمهير, طاقات, دعم التوظيف, السيرة الذاتية, حافز, هدف, دعم النقل الموجه, تصميم عروض, دعم الشهادات الاحترافية, حساب المواطن, الضمان الاجتماعي, مشاريع طلابية, إنشاء متاجر إلكترونية, تصميم دعوات, خدمات ريف, دعم الأسر المنتجة, توصيل الطلبات, وثيقة العمل الحر, التسجيل في جدارات">
+    
+    <!-- تحسين الـSEO -->
+    <title>نوف للخدمات الإلكترونية | التسجيل في جدارات وتمهير وطاقات ودعم النقل وغيرها</title>
+    <meta name="description" 
+          content="نوف للخدمات الإلكترونية تقدم خدمات التسجيل في جدارات وتمهير وطاقات ودعم النقل الموجه والشهادات الاحترافية والضمان الاجتماعي وحساب المواطن وساند وحافز، بالإضافة إلى تصميم عروض تقديمية وملفات احترافية وإنشاء متاجر إلكترونية وغيرها.">
+    <meta name="keywords" 
+          content="نوف, خدمات إلكترونية, التسجيل في جدارات, التسجيل في تمهير, التسجيل في طاقات, هدف, دعم التوظيف, دعم النقل الموجه, دعم الشهادة الاحترافية, وصول, حساب المواطن, الضمان المطور, ساند, حافز, الاستدامة, توطين, وثيقة العمل الحر, الأسر المنتجة, ريف, تصميم عروض, سير ذاتية, مشاريع طلابية, متجر إلكتروني, سلة, دعوات زفاف, انفو جرافيك, تحويل وضغط ملفات, وظائف, سيرة ذاتية, PowerPoint, Excel, Word">
     <meta name="author" content="نوف للخدمات الإلكترونية">
     <meta name="robots" content="index, follow">
-    <title>نوف للخدمات الإلكترونية</title>
+    
+    <!-- وسوم Open Graph لمشاركة أفضل على شبكات التواصل -->
+    <meta property="og:title" content="نوف للخدمات الإلكترونية | خدمات التسجيل والدعم">
+    <meta property="og:description" content="حلول إلكترونية متكاملة للتسجيل في البرامج الحكومية، وتصميم العروض والسير الذاتية، وإنشاء المتاجر الإلكترونية وغيرها.">
+    <meta property="og:image" content="images/preview.jpg"> <!-- يمكنك وضع رابط لصورة مناسبة -->
+    <meta property="og:url" content="https://example.com/"> 
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- استدعاء أيقونات Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
     <style>
+        /*------------------------------
+          الخطوط والألوان الأساسية
+        ------------------------------*/
         body {
-            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #ffffff, #f2f2f2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #ffffff, #f9f9f9);
             color: #333;
-            line-height: 1.6;
         }
-        header {
-            background: url('images/header-bg.jpg') no-repeat center center/cover;
-            background-color: #007acc; /* خلفية احتياطية */
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-        header h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* لتحسين وضوح النص */
-        }
-        header p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-        }
-        header button {
-            padding: 10px 30px;
-            font-size: 1.2rem;
-            background-color: #00c6ff;
-            border: none;
-            color: white;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        header button:hover {
-            background-color: #005f99;
-        }
+
+        /*------------------------------
+          القائمة العلوية (Navigation)
+        ------------------------------*/
         nav {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 15px 0;
             position: fixed;
-            width: 100%;
             top: 0;
-            z-index: 1000;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 999;
+            padding: 15px 0;
         }
         nav ul {
-            list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
+            list-style: none;
         }
         nav ul li {
             margin: 0 20px;
         }
         nav ul li a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             font-size: 1.1rem;
-            transition: color 0.3s;
+            transition: color 0.3s ease;
         }
         nav ul li a:hover {
             color: #00c6ff;
         }
+
+        /*------------------------------
+          الهيدر (Header)
+        ------------------------------*/
+        header {
+            background: url('images/header-bg.jpg') no-repeat center center/cover;
+            background-color: #007acc; /* خلفية احتياطية */
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+        }
+        header .btn-primary {
+            padding: 12px 35px;
+            font-size: 1.2rem;
+            background-color: #00c6ff;
+            border: none;
+            border-radius: 50px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        header .btn-primary:hover {
+            background-color: #005f99;
+        }
+
+        /*------------------------------
+          أقسام الصفحة
+        ------------------------------*/
         section {
             padding: 60px 20px;
-            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         section h2 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
+            font-size: 2.4rem;
             color: #007acc;
+            margin-bottom: 40px;
+            text-align: center;
         }
-        .services {
+        section p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /*------------------------------
+          قسم الخدمات (Services)
+        ------------------------------*/
+        .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
-        .service {
-            background: #ffffff;
-            padding: 20px;
+        .service-box {
+            background: #fff;
             border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
-        .service:hover {
-            transform: scale(1.05);
+        .service-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
         }
-        .service h3 {
-            font-size: 1.5rem;
+        .service-box h3 {
+            font-size: 1.4rem;
             margin-bottom: 10px;
             color: #007acc;
         }
+        .service-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /*------------------------------
+          الفوتر (Footer)
+        ------------------------------*/
         footer {
             background: #333;
-            color: white;
-            padding: 30px 0;
+            color: #fff;
             text-align: center;
+            padding: 20px 0;
         }
         footer p {
-            margin: 0;
+            margin: 5px 0;
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            color: #00c6ff;
+            text-decoration: none;
+        }
+
+        /*------------------------------
+          Responsive Adjustments
+        ------------------------------*/
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+            header p {
+                font-size: 1.1rem;
+            }
+            nav ul li a {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
-<body dir="rtl">
+<body>
+    <!-- شريط التنقل العلوي -->
     <nav>
         <ul>
-            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#home">الرئيسية</a></li>
             <li><a href="#about">من نحن</a></li>
             <li><a href="#services">خدماتنا</a></li>
             <li><a href="#contact">تواصل معنا</a></li>
         </ul>
     </nav>
 
-    <header>
+    <!-- الهيدر / الصفحة الرئيسية -->
+    <header id="home">
         <h1>نوف للخدمات الإلكترونية</h1>
-        <p>حلول مبتكرة لدعم احتياجاتك الرقمية والمهنية.</p>
-        <button>تعرف على خدماتنا</button>
+        <p>حلول مبتكرة وشاملة للتسجيل في البرامج الحكومية وتصميم العروض الاحترافية وخدمات الطلاب والمتاجر الإلكترونية وغيرها.</p>
+        <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'});">
+            اكتشف خدماتنا
+        </button>
     </header>
 
+    <!-- قسم من نحن -->
     <section id="about">
         <h2>من نحن</h2>
-        <p>نوف للخدمات الإلكترونية تقدم حلولاً رقمية متكاملة تشمل تصميم المواقع، إعداد السير الذاتية، وخدمات التوظيف. هدفنا هو تمكين الأفراد والشركات من تحقيق النجاح الرقمي والمستدام.</p>
+        <p>
+            نوف للخدمات الإلكترونية هي جهة متخصصة في تقديم مجموعة واسعة من الحلول الرقمية للمستفيدين الأفراد ورواد الأعمال. 
+            نهدف إلى تمكينك من الوصول إلى الخدمات الحكومية وتسهيل إجراءات التسجيل والدعم، بالإضافة إلى توفير حلول التصميم الاحترافية 
+            وخدمات إعداد الملفات وتنفيذ المشاريع الأكاديمية. رؤيتنا ترتكز على تقديم خدمة موثوقة بجودة عالية وبسعر منافس لضمان 
+            رضا العملاء وتحقيق أهدافهم في عالم متسارع الرقمنة.
+        </p>
     </section>
 
+    <!-- قسم الخدمات الرئيسية -->
     <section id="services">
         <h2>خدماتنا</h2>
-        <div class="services">
-            <div class="service">
+
+        <div class="services-grid">
+            <!-- الخدمات الحكومية والتوظيف -->
+            <div class="service-box">
+                <h3>التسجيل في جدارات</h3>
+                <p>نقوم بتسجيلك على منصة جدارات ومساعدتك على التقديم للوظائف المعلنة لتحقيق فرص توظيف أفضل.</p>
+            </div>
+            <div class="service-box">
                 <h3>التسجيل في تمهير</h3>
-                <p>نساعدك في التسجيل والاستفادة من برنامج تمهير لدعم التدريب العملي وتعزيز خبراتك المهنية.</p>
+                <p>نساعدك في الاستفادة من برنامج تمهير للتدريب على رأس العمل واكتساب الخبرة العملية.</p>
             </div>
-            <div class="service">
-                <h3>التسجيل في طاقات</h3>
-                <p>نوفر الدعم الكامل للاستفادة من برامج التوظيف عبر منصة طاقات لتحقيق أهدافك المهنية.</p>
+            <div class="service-box">
+                <h3>التسجيل في طاقات (هدف دعم التوظيف)</h3>
+                <p>دعم المنشآت والأفراد للتسجيل في طاقات والاستفادة من برامج دعم التوظيف المقدمة من هدف.</p>
             </div>
-            <div class="service">
+            <div class="service-box">
                 <h3>التسجيل في دعم النقل الموجه</h3>
-                <p>دعم السائقين للاستفادة من برامج النقل الموجه وتحقيق دخل إضافي.</p>
+                <p>نسهل إجراءات تسجيلك في برامج دعم النقل الموجه لتحقيق دخل إضافي للسائقين.</p>
             </div>
-            <div class="service">
-                <h3>السيرة الذاتية</h3>
-                <p>إعداد وتصميم سير ذاتية احترافية تجذب أصحاب العمل وتعزز فرصك في الحصول على الوظائف.</p>
+            <div class="service-box">
+                <h3>التسجيل في دعم الشهادة الاحترافية</h3>
+                <p>نرشدك إلى كيفية الحصول على دعم الشهادات الاحترافية لتطوير مهاراتك وتحسين فرصك المهنية.</p>
             </div>
-            <div class="service">
-                <h3>تصميم عروض تقديمية</h3>
-                <p>تصميم عروض باوربوينت جذابة ومميزة تلبي احتياجات الشركات والأفراد.</p>
+            <div class="service-box">
+                <h3>تغيير وتعديل الموقع في وصول</h3>
+                <p>نقوم بتعديل إعدادات حساب وصول وتحديث معلومات الموقع بدقة لضمان الاستفادة الكاملة من الخدمة.</p>
             </div>
-            <div class="service">
+            <div class="service-box">
+                <h3>إضافة وتعديل الآيبان في طاقات</h3>
+                <p>خدمة تعديل رقم الحساب البنكي (الآيبان) في منصة طاقات لضمان استلام الدعم المالي بكل سلاسة.</p>
+            </div>
+            <div class="service-box">
+                <h3>التسجيل في دم توصيل الطلبات</h3>
+                <p>نساعدك في إتمام تسجيلك في برامج توصيل الطلبات والاستفادة من الدعم المتاح.</p>
+            </div>
+            <div class="service-box">
+                <h3>التسجيل في برنامج وصول</h3>
+                <p>مساعدتك في إجراءات التسجيل في وصول لدعم الموظفات السعوديات وتخفيف تكاليف التنقل.</p>
+            </div>
+            <div class="service-box">
+                <h3>التسجيل في الضمان المطور</h3>
+                <p>نسهل عليك عملية التسجيل في نظام الضمان الاجتماعي المطور والاستفادة من المزايا المقدمة.</p>
+            </div>
+            <div class="service-box">
                 <h3>التسجيل في حساب المواطن</h3>
-                <p>نساعدك في تسجيل حساب المواطن والاستفادة من دعم الدولة المخصص للأسر والأفراد.</p>
+                <p>نقدم المساعدة لإتمام عملية التسجيل في حساب المواطن والاستفادة من الدعم المالي للأسر والأفراد.</p>
             </div>
-            <div class="service">
-                <h3>خدمات طلابية</h3>
-                <p>حل الواجبات، إنشاء البحوث، وعمل المشاريع لجميع التخصصات بطريقة احترافية.</p>
+            <div class="service-box">
+                <h3>التسجيل في ساند</h3>
+                <p>نرشدك لإتمام إجراءات التسجيل في نظام التأمين ضد التعطل عن العمل (ساند) لضمان حماية وظيفية أفضل.</p>
             </div>
-            <div class="service">
-                <h3>إنشاء متجر إلكتروني</h3>
-                <p>إنشاء متجر إلكتروني احترافي عبر منصة سلة لعرض منتجاتك وزيادة مبيعاتك.</p>
+            <div class="service-box">
+                <h3>التسجيل في دعم حافز الاستدامة توطين</h3>
+                <p>تسهيل إجراءات التسجيل في حافز الاستدامة لدعم الباحثين عن عمل وتمكينهم من التوظيف.</p>
+            </div>
+            <div class="service-box">
+                <h3>رفع اعتراض على أهلية حساب المواطن</h3>
+                <p>نقدم لك خدمة إرشادية لرفع الاعتراض على الأهلية وحل المشكلات المتعلقة بحساب المواطن.</p>
+            </div>
+            <div class="service-box">
+                <h3>رفع اعتراض على أهلية الضمان وحل مشاكله</h3>
+                <p>نقدم التوجيه في تقديم الاعتراض على أهلية الضمان الاجتماعي ومعالجة المشكلات لضمان حقوقك.</p>
+            </div>
+            <div class="service-box">
+                <h3>تنشيط حساب طاقات</h3>
+                <p>خدمة تفعيل حساب طاقات لضمان تواصل دعم التوظيف والبرامج الملحقة به.</p>
+            </div>
+            <div class="service-box">
+                <h3>استخراج وثيقة العمل الحر</h3>
+                <p>الحصول على وثيقة العمل الحر للاستفادة من مزاياها في توسيع نطاق أعمالك المستقلة.</p>
+            </div>
+            <div class="service-box">
+                <h3>استخراج وثيقة الأسر المنتجة</h3>
+                <p>مساعدتك في استخراج وثيقة الأسر المنتجة للاستفادة من برامج الدعم الريفي والحلول التمويلية.</p>
+            </div>
+            <div class="service-box">
+                <h3>التسجيل في ريف للأسر المنتجة والمزارعين</h3>
+                <p>دعم الأسر والمزارعين للتسجيل في برنامج ريف والاستفادة من الدعم الحكومي لتنمية مشاريعهم الزراعية.</p>
+            </div>
+            <!-- خدمات التصميم والملفات -->
+            <div class="service-box">
+                <h3>حل الواجبات وإنشاء البحوث والمشاريع</h3>
+                <p>نوفر خدمات أكاديمية متكاملة لجميع التخصصات بطريقة احترافية تضمن لك التميز.</p>
+            </div>
+            <div class="service-box">
+                <h3>تصميم عروض باوربوينت احترافية</h3>
+                <p>نقوم بعمل عروض تقديمية جذابة ومميزة للشركات والطلاب باللغة العربية أو الإنجليزية.</p>
+            </div>
+            <div class="service-box">
+                <h3>عمل ملفات وورد بشكل احترافي</h3>
+                <p>إعداد وتصميم ملفات وورد للتقارير والبحوث والمستندات الرسمية بأعلى جودة.</p>
+            </div>
+            <div class="service-box">
+                <h3>عمل ملفات إكسل بشكل احترافي</h3>
+                <p>إعداد الجداول وتحليل البيانات باستخدام إكسل بطرق احترافية تناسب احتياجاتك.</p>
+            </div>
+            <div class="service-box">
+                <h3>إنشاء متجر إلكتروني (سلة) احترافي</h3>
+                <p>بناء متجر إلكتروني متكامل عبر منصة سلة لعرض منتجاتك وزيادة مبيعاتك.</p>
+            </div>
+            <div class="service-box">
+                <h3>تصميم دعوات الزفاف وعقد القِران</h3>
+                <p>تصاميم فريدة لدعوات الزفاف وعقود القِران تناسب ذوقك ومناسبتك الخاصة.</p>
+            </div>
+            <div class="service-box">
+                <h3>تصميم إنفو جرافيك وصور</h3>
+                <p>تحويل الأفكار والمعلومات إلى رسومات بصرية جذابة لعرضها بشكل مبتكر واحترافي.</p>
+            </div>
+            <div class="service-box">
+                <h3>تحويل وضغط ملفات PDF</h3>
+                <p>تقديم خدمات تحويل ملفات PDF إلى صيغ أخرى أو ضغط حجمها لتسهيل مشاركتها.</p>
+            </div>
+            <div class="service-box">
+                <h3>تحويل الصور وحل مشاكل ضغط الصور</h3>
+                <p>معالجة الصور وتقليل حجمها مع الحفاظ على جودتها، وتحويل صيغ الصور عند الحاجة.</p>
+            </div>
+            <div class="service-box">
+                <h3>عمل سيرة ذاتية احترافية</h3>
+                <p>إعداد وتصميم سيرة ذاتية جذابة تبرز مهاراتك وخبراتك لتنال اهتمام جهات التوظيف.</p>
+            </div>
+            <div class="service-box">
+                <h3>التقديم على الوظائف (عربي وإنجليزي)</h3>
+                <p>نوفر خدمة التقديم على الوظائف الشاغرة باللغة العربية والإنجليزية لتحقيق فرص عمل أفضل.</p>
             </div>
         </div>
     </section>
 
+    <!-- قسم تواصل معنا أو معلومات الاتصال -->
+    <section id="contact">
+        <h2>تواصل معنا</h2>
+        <p>
+            هل لديك أي استفسارات إضافية أو ترغب في الاستفادة من إحدى خدماتنا؟ تواصل معنا الآن عبر الوسائل التالية:
+        </p>
+        <p>
+            <strong>البريد الإلكتروني:</strong> 
+            <a href="mailto:info@example.com">info@example.com</a> 
+            <br>
+            <strong>الهاتف/واتساب:</strong> 
+            <a href="tel:+966500000000">+966500000000</a>
+        </p>
+        <p>
+            نسعد بخدمتك والإجابة على جميع استفساراتك في أقرب وقت ممكن.
+        </p>
+    </section>
+
+    <!-- الفوتر -->
     <footer>
-        <p>&copy; 2025 جميع الحقوق محفوظة. تصميم بواسطة نوف للخدمات الإلكترونية.</p>
-        <p><a href="sitemap.xml">عرض خريطة الموقع</a></p>
+        <p>&copy; 2025 جميع الحقوق محفوظة. تصميم وتطوير بواسطة <strong>نوف للخدمات الإلكترونية</strong>.</p>
+        <p><a href="sitemap.xml">خريطة الموقع</a></p>
     </footer>
 
+    <!-- تفعيل التمرير السلس للروابط في القائمة -->
     <script>
-        // تمكين التمرير السلس
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // في حال عدم وجود href حقيقي أو تريد تفعيل السلاسة:
+                if(this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
+
 </body>
 </html>

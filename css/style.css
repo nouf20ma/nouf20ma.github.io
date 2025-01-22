@@ -47,3 +47,18 @@ section {
 section h2 {
     color: #007acc;
 }
+
+nav {
+    background: #007acc;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+body {
+    margin-top: 60px; /* لإضافة مسافة تحت شريط التنقل */
+}
+

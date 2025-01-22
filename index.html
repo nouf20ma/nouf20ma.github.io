@@ -3,43 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="نوف للخدمات الإلكترونية - خدمات احترافية تشمل دعم التوظيف، إعداد السيرة الذاتية، وتصميم العروض التقديمية.">
-    <meta name="keywords" content="نوف, خدمات إلكترونية, تمهير, طاقات, هدف, دعم التوظيف, دعم النقل, السيرة الذاتية, عروض باوربوينت, حافز الاستدامة">
+    <meta name="description" content="نوف للخدمات الإلكترونية - حلول مبتكرة لدعم التوظيف، تصميم العروض، وتحسين تجربة المستخدم.">
+    <meta name="keywords" content="نوف, خدمات إلكترونية, تمهير, طاقات, دعم التوظيف, سير ذاتية, تصميم عروض, حافز الاستدامة">
     <meta name="author" content="نوف للخدمات الإلكترونية">
     <title>نوف للخدمات الإلكترونية</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* تصميم عام */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #007acc, #00c6ff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* شريط التنقل */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            transition: background 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00c6ff;
+        }
+
+        /* الصفحة الرئيسية */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1.5s ease;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1.5s ease;
+        }
+
+        header button {
+            background-color: #00c6ff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        header button:hover {
+            background-color: #007acc;
+        }
+
+        /* أقسام الموقع */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            margin: 40px auto;
+            width: 80%;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            padding: 20px;
+            background: #f4f4f4;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            background: #e0f7ff;
+        }
+
+        .service h3 {
+            font-size: 1.5rem;
+            color: #007acc;
+            margin-bottom: 10px;
+        }
+
+        .service p {
+            font-size: 1rem;
+        }
+
+        /* الفوتر */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* الحركات */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
 </head>
 <body dir="rtl">
     <!-- شريط التنقل -->
     <nav>
         <ul>
-            <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
-            <li><a href="#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
-            <li><a href="#services"><i class="fas fa-concierge-bell"></i> خدماتنا</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> تواصل معنا</a></li>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
         </ul>
     </nav>
 
     <!-- الصفحة الرئيسية -->
     <header id="home">
-        <div class="hero">
-            <h1>مرحبًا بكم في نوف للخدمات الإلكترونية</h1>
-            <p>نحن نقدم حلولاً رقمية مبتكرة لدعم الأفراد والشركات.</p>
-            <button onclick="scrollToSection('services')">استعرض خدماتنا</button>
-        </div>
+        <h1>نوف للخدمات الإلكترونية</h1>
+        <p>تطوير مستدام وحلول مبتكرة لتحقيق النجاح الرقمي.</p>
+        <button onclick="scrollToSection('services')">استكشف خدماتنا</button>
     </header>
 
     <!-- من نحن -->
     <section id="about">
         <h2>من نحن</h2>
-        <p>نوف للخدمات الإلكترونية تقدم حلولاً متكاملة تشمل دعم التوظيف، إعداد السيرة الذاتية، وخدمات النقل الموجه. هدفنا هو تمكين الأفراد والشركات من تحقيق النجاح.</p>
-        <p><strong>لماذا نوف؟</strong></p>
-        <ul>
-            <li><i class="fas fa-check-circle"></i> خبرة واسعة في السوق المحلي.</li>
-            <li><i class="fas fa-check-circle"></i> خدمات مخصصة لتلبية احتياجات العملاء.</li>
-            <li><i class="fas fa-check-circle"></i> دعم مستمر لضمان تحقيق أهدافك.</li>
-        </ul>
+        <p>نوف للخدمات الإلكترونية تقدم حلولًا رقمية مبتكرة تشمل تصميم المواقع، إعداد السير الذاتية، وخدمات النقل الموجه. هدفنا هو تقديم خدمات احترافية تلبي احتياجات عملائنا.</p>
     </section>
 
     <!-- خدماتنا -->
@@ -47,24 +214,24 @@
         <h2>خدماتنا</h2>
         <div class="services-container">
             <div class="service">
-                <h3><i class="fas fa-briefcase"></i> تمهير</h3>
-                <p>نساعدك في التسجيل والاستفادة من برنامج تمهير لدعم التدريب.</p>
+                <h3>تمهير</h3>
+                <p>نساعدك في الاستفادة من برنامج تمهير لتعزيز مهاراتك المهنية.</p>
             </div>
             <div class="service">
-                <h3><i class="fas fa-chart-line"></i> طاقات وهدف</h3>
-                <p>دعم كامل للتوظيف والاستفادة من برامج هدف لدعم الاستدامة.</p>
+                <h3>طاقات وهدف</h3>
+                <p>تقديم دعم شامل للاستفادة من برامج طاقات وهدف.</p>
             </div>
             <div class="service">
-                <h3><i class="fas fa-car"></i> دعم النقل الموجه</h3>
-                <p>توفير حلول لتسجيل السائقين في برامج دعم النقل الموجه.</p>
+                <h3>دعم النقل الموجه</h3>
+                <p>خدمات تسجيل السائقين وتقديم الدعم الكامل.</p>
             </div>
             <div class="service">
-                <h3><i class="fas fa-file-alt"></i> السيرة الذاتية</h3>
-                <p>إعداد وتصميم سير ذاتية احترافية بصيغة PDF و ATS.</p>
+                <h3>السير الذاتية</h3>
+                <p>إعداد وتصميم سير ذاتية احترافية بتنسيقات متعددة.</p>
             </div>
             <div class="service">
-                <h3><i class="fas fa-presentation"></i> عروض باوربوينت</h3>
-                <p>تصميم عروض تقديمية جذابة ومؤثرة تلبي احتياجاتك.</p>
+                <h3>تصميم عروض باوربوينت</h3>
+                <p>تصميم عروض تقديمية إبداعية وجذابة.</p>
             </div>
         </div>
     </section>

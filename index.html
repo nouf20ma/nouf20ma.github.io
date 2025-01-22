@@ -1,170 +1,91 @@
-<!DOCTYPE HTML>
-<!--
-    قالب مخصص لخدمات نوف الإلكترونية
-    تصميم: HTML5 UP - تم التعديل بواسطة مساعدك الذكي
-    -->
-<html lang="ar">
-<head>
-    <title>نوف للخدمات الإلكترونية</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta name="description" content="نوف للخدمات الإلكترونية تقدم حلولاً رقمية شاملة مثل تمهير، طاقات، دعم التوظيف، إعداد السيرة الذاتية، وتصميم العروض التقديمية." />
-    <meta name="keywords" content="نوف, خدمات إلكترونية, تمهير, طاقات, دعم التوظيف, السيرة الذاتية, تصميم عروض" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        body {
-            direction: rtl;
-            text-align: right;
-        }
+/* تصميم عام */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
+/* شريط التنقل */
+nav {
+    background: #007acc;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-    </style>
-</head>
-<body class="is-preload">
-    <div id="page-wrapper">
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
 
-        <!-- Header -->
-        <div id="header">
+nav ul li {
+    margin: 0 15px;
+}
 
-            <!-- Logo -->
-            <h1><a href="index.html" id="logo">نوف للخدمات الإلكترونية</a></h1>
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
 
-            <!-- Nav -->
-            <nav id="nav">
-                <ul>
-                    <li class="current"><a href="index.html">الرئيسية</a></li>
-                    <li>
-                        <a href="#">الخدمات</a>
-                        <ul>
-                            <li><a href="#">تمهير</a></li>
-                            <li><a href="#">طاقات</a></li>
-                            <li><a href="#">السيرة الذاتية</a></li>
-                            <li><a href="#">العروض التقديمية</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">عن الشركة</a></li>
-                    <li><a href="contact.html">تواصل معنا</a></li>
-                </ul>
-            </nav>
+nav ul li a:hover {
+    color: #ffd700;
+}
 
-        </div>
+/* الأقسام */
+header {
+    margin-top: 70px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        <!-- Banner -->
-        <section id="banner">
-            <header>
-                <h2>مرحبًا بكم في نوف للخدمات الإلكترونية</h2>
-                <p>نوفر حلولاً مبتكرة لدعم التوظيف وتعزيز النجاح الرقمي.</p>
-                <a href="#services" class="button">تعرف على خدماتنا</a>
-            </header>
-        </section>
+section {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        <!-- Highlights -->
-        <section class="wrapper style1">
-            <div class="container">
-                <div class="row gtr-200">
-                    <section class="col-4 col-12-narrower">
-                        <div class="box highlight">
-                            <i class="icon solid major fa-briefcase"></i>
-                            <h3>تمهير</h3>
-                            <p>نساعدك في التسجيل في برنامج تمهير لتعزيز خبراتك المهنية.</p>
-                        </div>
-                    </section>
-                    <section class="col-4 col-12-narrower">
-                        <div class="box highlight">
-                            <i class="icon solid major fa-chart-line"></i>
-                            <h3>طاقات</h3>
-                            <p>نوفر لك الدعم الكامل للاستفادة من برامج التوظيف المقدمة عبر طاقات.</p>
-                        </div>
-                    </section>
-                    <section class="col-4 col-12-narrower">
-                        <div class="box highlight">
-                            <i class="icon solid major fa-pencil-alt"></i>
-                            <h3>السيرة الذاتية</h3>
-                            <p>تصميم سير ذاتية احترافية تناسب متطلبات سوق العمل.</p>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
+section h2 {
+    color: #007acc;
+}
 
-        <!-- Gigantic Heading -->
-        <section class="wrapper style2">
-            <div class="container">
-                <header class="major">
-                    <h2>حلولنا تناسب احتياجاتك</h2>
-                    <p>اكتشف خدماتنا وابدأ الآن.</p>
-                </header>
-            </div>
-        </section>
+/* الأزرار */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
-        <!-- Posts -->
-        <section class="wrapper style1">
-            <div class="container">
-                <div class="row">
-                    <section class="col-6 col-12-narrower">
-                        <div class="box post">
-                            <a href="#" class="image left"><img src="images/pic01.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h3>دعم التوظيف</h3>
-                                <p>نساعدك على الاستفادة من برامج دعم التوظيف مثل هدف وحافز.</p>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="col-6 col-12-narrower">
-                        <div class="box post">
-                            <a href="#" class="image left"><img src="images/pic02.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h3>العروض التقديمية</h3>
-                                <p>تصميم عروض باوربوينت مميزة تناسب احتياجاتك.</p>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </div>
-        </section>
+button:hover {
+    background-color: #218838;
+}
 
-        <!-- CTA -->
-        <section id="cta" class="wrapper style3">
-            <div class="container">
-                <header>
-                    <h2>هل أنت جاهز للبدء؟</h2>
-                    <a href="contact.html" class="button">تواصل معنا</a>
-                </header>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <div id="footer">
-            <div class="container">
-                <ul class="icons">
-                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                    <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                </ul>
-                <div class="copyright">
-                    <ul class="menu">
-                        <li>&copy; 2025 جميع الحقوق محفوظة. تصميم نوف للخدمات الإلكترونية</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+/* الفوتر */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
